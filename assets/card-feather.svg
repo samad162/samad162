@@ -1,74 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 260" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="auto">
   <defs>
-    <linearGradient id="cardBgFeather" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B0F19" />
-      <stop offset="50%" stop-color="#111326" />
-      <stop offset="100%" stop-color="#080B12" />
+    <linearGradient id="bgFeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="50%" stop-color="#121428" />
+      <stop offset="100%" stop-color="#060910" />
     </linearGradient>
-    <radialGradient id="cardGlowFeather" cx="90%" cy="15%" r="60%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.22" />
+    <radialGradient id="glowFeather" cx="95%" cy="10%" r="65%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#4F46E5" stop-opacity="0.04" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="accentFeather" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="lineFeather" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#6366F1" />
       <stop offset="100%" stop-color="#818CF8" />
     </linearGradient>
   </defs>
 
-  <!-- Card Shell -->
-  <rect width="580" height="260" rx="16" fill="url(#cardBgFeather)" stroke="#1E293B" stroke-width="1.5" />
-  <rect width="580" height="260" rx="16" fill="url(#cardGlowFeather)" />
-  <rect x="6" y="6" width="568" height="248" rx="12" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
+  <!-- Outer Double-Bezel Shell -->
+  <rect width="600" height="300" rx="18" fill="url(#bgFeather)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="600" height="300" rx="18" fill="url(#glowFeather)" />
+  <rect x="7" y="7" width="586" height="286" rx="13" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
 
-  <!-- Left Accent Bar -->
-  <rect x="18" y="24" width="4" height="212" rx="2" fill="url(#accentFeather)" />
+  <!-- Accent Edge Indicator -->
+  <rect x="22" y="24" width="4" height="252" rx="2" fill="url(#lineFeather)" />
 
-  <!-- Top Metadata Bar -->
-  <g transform="translate(36, 26)">
-    <!-- Category Badge -->
-    <rect width="180" height="24" rx="6" fill="#1C1F38" stroke="#6366F1" stroke-opacity="0.5" stroke-width="1" />
-    <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="700" fill="#A5B4FC" letter-spacing="1">FLUTTER ECOSYSTEM</text>
+  <!-- Top Metadata Header -->
+  <g transform="translate(42, 28)">
+    <rect width="180" height="26" rx="6" fill="#181B38" stroke="#6366F1" stroke-opacity="0.5" stroke-width="1" />
+    <circle cx="14" cy="13" r="3.5" fill="#6366F1" />
+    <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="700" fill="#A5B4FC" letter-spacing="1">FLUTTER ECOSYSTEM</text>
 
-    <!-- Version Badge -->
-    <rect x="190" y="0" width="105" height="24" rx="6" fill="#1E293B" />
-    <text x="200" y="16" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="600" fill="#94A3B8">OPEN SOURCE</text>
+    <!-- Metric Chip -->
+    <rect x="420" y="0" width="115" height="26" rx="6" fill="#1C1E3C" stroke="#818CF8" stroke-opacity="0.5" stroke-width="1" />
+    <text x="434" y="17" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="700" fill="#C7D2FE">40+ WIDGETS</text>
   </g>
 
-  <!-- Title -->
-  <text x="36" y="88" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Geist', sans-serif" font-size="23" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+  <!-- Project Title -->
+  <text x="42" y="94" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Geist', sans-serif" font-size="24" font-weight="850" fill="#FFFFFF" letter-spacing="-0.5">
     Feather UI Design System
   </text>
 
-  <!-- Description -->
-  <text x="36" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">
-    Prebuilt Flutter component library, modern widget system,
-  </text>
-  <text x="36" y="138" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">
-    CLI project scaffolding tool, and instant live preview playground.
+  <!-- Subtitle -->
+  <text x="42" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="500" fill="#94A3B8">
+    Modular Flutter component system, CLI scaffolder, and live preview playground.
   </text>
 
-  <!-- Stack Pills -->
-  <g transform="translate(36, 168)">
-    <rect width="78" height="26" rx="6" fill="#1A2234" stroke="#334155" stroke-width="1" />
+  <!-- Technical Telemetry Box (Bento Spec) -->
+  <g transform="translate(42, 144)">
+    <rect width="514" height="66" rx="10" fill="#12162C" stroke="#23284A" stroke-width="1" />
+
+    <!-- Spec 1 -->
+    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10" font-weight="600" fill="#64748B" letter-spacing="1">CLI SCAFFOLDING</text>
+    <text x="16" y="48" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="13" font-weight="700" fill="#818CF8">Instant Template Setup</text>
+
+    <!-- Vertical Divider -->
+    <line x1="260" y1="12" x2="260" y2="54" stroke="#1E293B" stroke-width="1" />
+
+    <!-- Spec 2 -->
+    <text x="280" y="24" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10" font-weight="600" fill="#64748B" letter-spacing="1">DESIGN PARADIGM</text>
+    <text x="280" y="48" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="13" font-weight="700" fill="#38BDF8">Accessible &amp; Minimalist</text>
+  </g>
+
+  <!-- Bottom Action Row -->
+  <g transform="translate(42, 236)">
+    <!-- Tech Tags -->
+    <rect width="76" height="26" rx="6" fill="#1B1E3B" stroke="#334155" stroke-width="1" />
     <circle cx="12" cy="13" r="3" fill="#02569B" />
     <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Flutter</text>
 
-    <g transform="translate(86, 0)">
-      <rect width="68" height="26" rx="6" fill="#1A2234" stroke="#334155" stroke-width="1" />
+    <g transform="translate(84, 0)">
+      <rect width="66" height="26" rx="6" fill="#1B1E3B" stroke="#334155" stroke-width="1" />
       <circle cx="12" cy="13" r="3" fill="#0175C2" />
       <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Dart</text>
     </g>
 
-    <g transform="translate(162, 0)">
-      <rect width="90" height="26" rx="6" fill="#1A2234" stroke="#334155" stroke-width="1" />
-      <circle cx="12" cy="13" r="3" fill="#6366F1" />
-      <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">UI System</text>
+    <g transform="translate(158, 0)">
+      <rect width="88" height="26" rx="6" fill="#1B1E3B" stroke="#334155" stroke-width="1" />
+      <circle cx="12" cy="13" r="3" fill="#818CF8" />
+      <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Component</text>
     </g>
-  </g>
 
-  <!-- CTA Pill (Bottom Right) -->
-  <g transform="translate(416, 206)">
-    <rect width="138" height="32" rx="16" fill="#6366F1" fill-opacity="0.15" stroke="#6366F1" stroke-opacity="0.5" stroke-width="1" />
-    <text x="18" y="21" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#A5B4FC" letter-spacing="1">VIEW REPO →</text>
+    <!-- Button-in-Button CTA -->
+    <g transform="translate(366, -2)">
+      <rect width="148" height="30" rx="15" fill="#6366F1" fill-opacity="0.15" stroke="#6366F1" stroke-opacity="0.5" stroke-width="1" />
+      <text x="18" y="19.5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#A5B4FC" letter-spacing="1">EXPLORE REPO</text>
+      <circle cx="132" cy="15" r="9" fill="#6366F1" fill-opacity="0.25" />
+      <text x="129" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#A5B4FC">→</text>
+    </g>
   </g>
 </svg>

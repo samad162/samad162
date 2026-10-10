@@ -1,70 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 290" width="100%" height="auto">
   <defs>
-    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D16" />
-      <stop offset="100%" stop-color="#05070B" />
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="50%" stop-color="#0E1320" />
+      <stop offset="100%" stop-color="#070910" />
     </linearGradient>
   </defs>
 
-  <!-- Terminal Window Shell -->
-  <rect width="880" height="320" rx="14" fill="url(#termBg)" stroke="#1E293B" stroke-width="1.5" />
+  <!-- Outer Frame -->
+  <rect width="1220" height="290" rx="16" fill="url(#termGrad)" stroke="#1E293B" stroke-width="1.5" />
 
-  <!-- Window Header Bar -->
-  <rect width="880" height="38" rx="14" fill="#0F1422" />
-  <rect y="24" width="880" height="14" fill="#0F1422" />
-  <line x1="0" y1="38" x2="880" y2="38" stroke="#1E293B" stroke-width="1" />
+  <!-- Top Titlebar -->
+  <rect width="1220" height="42" rx="16" fill="#111726" />
+  <rect y="28" width="1220" height="14" fill="#111726" />
+  <line x1="0" y1="42" x2="1220" y2="42" stroke="#1E293B" stroke-width="1" />
 
   <!-- macOS Window Controls -->
-  <circle cx="22" cy="19" r="6" fill="#FF5F56" />
-  <circle cx="42" cy="19" r="6" fill="#FFBD2E" />
-  <circle cx="62" cy="19" r="6" fill="#27C93F" />
+  <circle cx="26" cy="21" r="6" fill="#FF5F56" />
+  <circle cx="48" cy="21" r="6" fill="#FFBD2E" />
+  <circle cx="70" cy="21" r="6" fill="#27C93F" />
 
-  <!-- Window Title -->
-  <text x="440" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI Mono', monospace" font-size="12" font-weight="600" fill="#94A3B8">
-    samad@neural-station: ~ (zsh)
+  <!-- Window Header Title -->
+  <text x="610" y="26" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI Mono', monospace" font-size="12" font-weight="600" fill="#94A3B8" letter-spacing="1">
+    samad@quantum-station: ~ (zsh) • [NODE: NAMAKKAL, IN]
   </text>
 
-  <!-- Terminal Content Body -->
-  <g transform="translate(24, 66)" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="13">
-    <!-- Line 1 -->
+  <!-- Terminal Session Content -->
+  <g transform="translate(36, 72)" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="13.5">
+    <!-- Prompt 1 -->
     <text x="0" y="0">
       <tspan fill="#38BDF8">➜</tspan>
-      <tspan fill="#A5B4FC" font-weight="600"> ~ </tspan>
-      <tspan fill="#F8FAFC">whoami</tspan>
+      <tspan fill="#818CF8" font-weight="600"> ~ </tspan>
+      <tspan fill="#F8FAFC">neofetch --brief</tspan>
     </text>
-    <text x="0" y="22" fill="#94A3B8">
-      Abdulsamad. S <tspan fill="#64748B">—</tspan> AI &amp; Data Science @ Selvam College of Technology (Namakkal, IN)
+    <text x="0" y="24" fill="#94A3B8">
+      <tspan fill="#38BDF8">identity</tspan>: Abdulsamad. S  <tspan fill="#64748B">|</tspan>  AI &amp; Data Science @ Selvam College of Technology
     </text>
 
-    <!-- Line 2 -->
-    <text x="0" y="56">
+    <!-- Prompt 2 -->
+    <text x="0" y="58">
       <tspan fill="#38BDF8">➜</tspan>
-      <tspan fill="#A5B4FC" font-weight="600"> ~ </tspan>
-      <tspan fill="#F8FAFC">cat capabilities.json</tspan>
+      <tspan fill="#818CF8" font-weight="600"> ~ </tspan>
+      <tspan fill="#F8FAFC">cat engineering_manifesto.json</tspan>
     </text>
-    <text x="0" y="78" fill="#FCD34D">{</text>
-    <text x="20" y="98" fill="#E2E8F0">
-      <tspan fill="#38BDF8">"focus"</tspan>: [<tspan fill="#34D399">"Vision Forensics"</tspan>, <tspan fill="#34D399">"Deepfake Detection"</tspan>, <tspan fill="#34D399">"Flutter CLI Architectures"</tspan>],
+    <text x="0" y="82" fill="#E2E8F0">
+      { <tspan fill="#38BDF8">"core"</tspan>: [<tspan fill="#34D399">"Vision Forensics"</tspan>, <tspan fill="#34D399">"Deepfake Detection"</tspan>, <tspan fill="#34D399">"Flutter Architecture"</tspan>], <tspan fill="#38BDF8">"media_lab"</tspan>: <tspan fill="#F472B6">"DaVinci Resolve Studio"</tspan> }
     </text>
-    <text x="20" y="118" fill="#E2E8F0">
-      <tspan fill="#38BDF8">"creator_rig"</tspan>: <tspan fill="#34D399">"DaVinci Resolve Studio (Color &amp; Tech Walkthroughs)"</tspan>,
-    </text>
-    <text x="20" y="138" fill="#E2E8F0">
-      <tspan fill="#38BDF8">"status"</tspan>: <tspan fill="#34D399">"● Active for Applied AI &amp; DevTool Engineering"</tspan>
-    </text>
-    <text x="0" y="158" fill="#FCD34D">}</text>
 
-    <!-- Line 3 -->
-    <text x="0" y="194">
+    <!-- Prompt 3 -->
+    <text x="0" y="120">
       <tspan fill="#38BDF8">➜</tspan>
-      <tspan fill="#A5B4FC" font-weight="600"> ~ </tspan>
-      <tspan fill="#F8FAFC">git status</tspan>
+      <tspan fill="#818CF8" font-weight="600"> ~ </tspan>
+      <tspan fill="#F8FAFC">sysctl get status</tspan>
     </text>
-    <text x="0" y="216" fill="#34D399">
-      On branch main • 4 flagship repos deployed • 0 vulnerabilities detected
+    <text x="0" y="144" fill="#34D399">
+      ● ACTIVE FOR APPLIED AI &amp; DEVTOOL ENGINEERING
       <tspan fill="#38BDF8">
         <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />_
       </tspan>
     </text>
+  </g>
+
+  <!-- Right Side Hardware Telemetry Badge -->
+  <g transform="translate(980, 68)">
+    <rect width="200" height="180" rx="10" fill="#0A0E18" stroke="#1E293B" stroke-width="1" />
+    <text x="16" y="28" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10" font-weight="700" fill="#64748B" letter-spacing="1">RUNTIME TELEMETRY</text>
+    <text x="16" y="54" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="12" font-weight="600" fill="#38BDF8">CUDA 12.x • PyTorch</text>
+    <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="12" font-weight="600" fill="#818CF8">Flutter 3.x • Dart</text>
+    <text x="16" y="102" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="12" font-weight="600" fill="#34D399">Git • Docker • Linux</text>
+    <line x1="16" y1="120" x2="184" y2="120" stroke="#1E293B" stroke-width="1" />
+    <text x="16" y="142" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10" font-weight="700" fill="#64748B">UPTIME</text>
+    <text x="16" y="162" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="12" font-weight="700" fill="#FCD34D">24/7 SHIPPING</text>
   </g>
 </svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 250" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgStudio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="50%" stop-color="#140E24" />
+      <stop offset="100%" stop-color="#070910" />
+    </linearGradient>
+    <radialGradient id="glowStudio" cx="85%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="eqGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#00F2FE" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Shell -->
+  <rect width="1220" height="250" rx="18" fill="url(#bgStudio)" stroke="#2E1C4E" stroke-width="1.5" />
+  <rect width="1220" height="250" rx="18" fill="url(#glowStudio)" />
+  <rect x="7" y="7" width="1206" height="236" rx="13" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1" />
+
+  <!-- Accent Line -->
+  <rect x="22" y="24" width="4" height="202" rx="2" fill="url(#eqGrad)" />
+
+  <!-- Content Group -->
+  <g transform="translate(44, 30)">
+    <!-- Category Chip -->
+    <rect width="210" height="26" rx="6" fill="#24143D" stroke="#EC4899" stroke-opacity="0.5" stroke-width="1" />
+    <circle cx="14" cy="13" r="3.5" fill="#EC4899">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="700" fill="#F472B6" letter-spacing="1.5">CREATOR STUDIO &amp; LAB</text>
+
+    <!-- Main Title -->
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Geist', sans-serif" font-size="25" font-weight="850" fill="#FFFFFF" letter-spacing="-0.5">
+      Technical Media &amp; High-Fidelity Video Production
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">
+      Engineering technical architecture breakdowns, motion graphics, and deep-dive developer tutorials.
+    </text>
+
+    <!-- Lower Meta Pills -->
+    <g transform="translate(0, 126)">
+      <!-- Tool 1 -->
+      <rect width="220" height="34" rx="8" fill="#1A132C" stroke="#37245B" stroke-width="1" />
+      <circle cx="16" cy="17" r="4" fill="#EC4899" />
+      <text x="28" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#FCE7F3">DaVinci Resolve Studio</text>
+
+      <!-- Tool 2 -->
+      <g transform="translate(232, 0)">
+        <rect width="200" height="34" rx="8" fill="#1A132C" stroke="#37245B" stroke-width="1" />
+        <circle cx="16" cy="17" r="4" fill="#8B5CF6" />
+        <text x="28" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#EDE9FE">Soundwave Audio AI</text>
+      </g>
+
+      <!-- Tool 3 -->
+      <g transform="translate(444, 0)">
+        <rect width="230" height="34" rx="8" fill="#1A132C" stroke="#37245B" stroke-width="1" />
+        <circle cx="16" cy="17" r="4" fill="#00F2FE" />
+        <text x="28" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#E0F2FE">Computer Vision Explanations</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Visual Equalizer Animation Simulation -->
+  <g transform="translate(970, 75)">
+    <!-- Spectrum Bars -->
+    <rect x="0" y="60" width="8" height="60" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="60;110;40;90;60" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="y" values="60;10;80;30;60" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="18" y="40" width="8" height="80" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="80;30;100;50;80" dur="1.4s" repeatCount="indefinite" />
+      <animate attributeName="y" values="40;90;20;70;40" dur="1.4s" repeatCount="indefinite" />
+    </rect>
+    <rect x="36" y="20" width="8" height="100" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="100;50;115;70;100" dur="1.1s" repeatCount="indefinite" />
+      <animate attributeName="y" values="20;70;5;50;20" dur="1.1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="54" y="50" width="8" height="70" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="70;110;40;85;70" dur="1.3s" repeatCount="indefinite" />
+      <animate attributeName="y" values="50;10;80;35;50" dur="1.3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="72" y="30" width="8" height="90" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="90;40;95;60;90" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="y" values="30;80;25;60;30" dur="1.5s" repeatCount="indefinite" />
+    </rect>
+    <rect x="90" y="70" width="8" height="50" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="50;90;30;105;50" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="y" values="70;30;90;15;70" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="108" y="45" width="8" height="75" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="75;25;85;55;75" dur="1.4s" repeatCount="indefinite" />
+      <animate attributeName="y" values="45;95;35;65;45" dur="1.4s" repeatCount="indefinite" />
+    </rect>
+    <rect x="126" y="25" width="8" height="95" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="95;45;110;65;95" dur="1.1s" repeatCount="indefinite" />
+      <animate attributeName="y" values="25;75;10;55;25" dur="1.1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="144" y="55" width="8" height="65" rx="4" fill="url(#eqGrad)">
+      <animate attributeName="height" values="65;100;35;80;65" dur="1.3s" repeatCount="indefinite" />
+      <animate attributeName="y" values="55;20;85;40;55" dur="1.3s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
