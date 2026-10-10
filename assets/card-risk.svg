@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 260" width="100%" height="auto">
+  <defs>
+    <linearGradient id="cardBgRisk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#1B1710" />
+      <stop offset="100%" stop-color="#080B12" />
+    </linearGradient>
+    <radialGradient id="cardGlowRisk" cx="90%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="accentRisk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Shell -->
+  <rect width="580" height="260" rx="16" fill="url(#cardBgRisk)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="580" height="260" rx="16" fill="url(#cardGlowRisk)" />
+  <rect x="6" y="6" width="568" height="248" rx="12" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
+
+  <!-- Left Accent Bar -->
+  <rect x="18" y="24" width="4" height="212" rx="2" fill="url(#accentRisk)" />
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(36, 26)">
+    <!-- Category Badge -->
+    <rect width="180" height="24" rx="6" fill="#2E2310" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="1" />
+    <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="700" fill="#FCD34D" letter-spacing="1">STATIC INTELLIGENCE</text>
+
+    <!-- Version Badge -->
+    <rect x="190" y="0" width="70" height="24" rx="6" fill="#1E293B" />
+    <text x="200" y="16" font-family="-apple-system, BlinkMacSystemFont, monospace" font-size="10.5" font-weight="600" fill="#94A3B8">AI / ML</text>
+  </g>
+
+  <!-- Title -->
+  <text x="36" y="88" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Geist', sans-serif" font-size="23" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    AI Code Risk Predictor
+  </text>
+
+  <!-- Description -->
+  <text x="36" y="118" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">
+    Machine learning intelligence engine that parses source code
+  </text>
+  <text x="36" y="138" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">
+    patterns to evaluate structural security risks and vulnerability vectors.
+  </text>
+
+  <!-- Stack Pills -->
+  <g transform="translate(36, 168)">
+    <rect width="78" height="26" rx="6" fill="#1A2234" stroke="#334155" stroke-width="1" />
+    <circle cx="12" cy="13" r="3" fill="#3776AB" />
+    <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Python</text>
+
+    <g transform="translate(86, 0)">
+      <rect width="115" height="26" rx="6" fill="#1A2234" stroke="#334155" stroke-width="1" />
+      <circle cx="12" cy="13" r="3" fill="#F59E0B" />
+      <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Risk Modeling</text>
+    </g>
+
+    <g transform="translate(209, 0)">
+      <rect width="80" height="26" rx="6" fill="#1A2234" stroke="#334155" stroke-width="1" />
+      <circle cx="12" cy="13" r="3" fill="#EF4444" />
+      <text x="22" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">SecOps</text>
+    </g>
+  </g>
+
+  <!-- CTA Pill (Bottom Right) -->
+  <g transform="translate(416, 206)">
+    <rect width="138" height="32" rx="16" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="1" />
+    <text x="18" y="21" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#FCD34D" letter-spacing="1">VIEW REPO →</text>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090E" />
+      <stop offset="50%" stop-color="#0C101A" />
+      <stop offset="100%" stop-color="#080A10" />
+    </linearGradient>
+
+    <!-- Ambient Glows -->
+    <radialGradient id="glowCyan" cx="85%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#0077B6" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="15%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#4338CA" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="textGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <!-- Subtle Grid -->
+    <pattern id="gridDark" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="380" rx="20" fill="url(#bgGradDark)" />
+  <rect width="1200" height="380" rx="20" fill="url(#gridDark)" />
+  <rect width="1200" height="380" rx="20" fill="url(#glowCyan)" />
+  <rect width="1200" height="380" rx="20" fill="url(#glowIndigo)" />
+
+  <!-- Outer Glass Frame -->
+  <rect x="12" y="12" width="1176" height="356" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+
+  <!-- Corner Brackets -->
+  <path d="M 28 44 L 28 28 L 44 28" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round" />
+  <path d="M 1172 44 L 1172 28 L 1156 28" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round" />
+  <path d="M 28 336 L 28 352 L 44 352" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" />
+  <path d="M 1172 336 L 1172 352 L 1156 352" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(48, 54)">
+    <!-- Eyebrow Pill -->
+    <rect width="260" height="28" rx="14" fill="#1E293B" fill-opacity="0.7" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="16" cy="14" r="4" fill="#00F2FE">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="28" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" letter-spacing="2">SYSTEM LABS // @SAMAD162</text>
+
+    <!-- Location & Status -->
+    <text x="750" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI Mono', monospace" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1.5">NAMAKKAL, IN  •  AI &amp; DATA SCIENCE @ SELVAM</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="48" y="168" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Geist', 'Inter', sans-serif" font-size="70" font-weight="850" fill="url(#textGradDark)" letter-spacing="-2">
+    ABDULSAMAD S.
+  </text>
+
+  <!-- Subtitle with Color Accents -->
+  <text x="50" y="214" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Geist Mono', monospace" font-size="16.5" font-weight="600" fill="#94A3B8" letter-spacing="3.5">
+    AI/ML ENGINEER  <tspan fill="#00F2FE">/</tspan>  FLUTTER ARCHITECT  <tspan fill="#6366F1">/</tspan>  CONTENT CREATOR
+  </text>
+
+  <!-- Divider Line -->
+  <line x1="50" y1="246" x2="1150" y2="246" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+
+  <!-- Bottom Navigation / Domain Pills -->
+  <g transform="translate(50, 274)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="42" rx="10" fill="#131A29" stroke="#1E293B" stroke-width="1" />
+      <circle cx="20" cy="21" r="4" fill="#38BDF8" />
+      <text x="36" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">Computer Vision Forensics</text>
+    </g>
+
+    <!-- Pill 2 -->
+    <g transform="translate(266, 0)">
+      <rect width="240" height="42" rx="10" fill="#131A29" stroke="#1E293B" stroke-width="1" />
+      <circle cx="20" cy="21" r="4" fill="#818CF8" />
+      <text x="36" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">Flutter &amp; Dart Tooling</text>
+    </g>
+
+    <!-- Pill 3 -->
+    <g transform="translate(522, 0)">
+      <rect width="260" height="42" rx="10" fill="#131A29" stroke="#1E293B" stroke-width="1" />
+      <circle cx="20" cy="21" r="4" fill="#34D399" />
+      <text x="36" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">Static ML Risk Prediction</text>
+    </g>
+
+    <!-- Pill 4 -->
+    <g transform="translate(798, 0)">
+      <rect width="300" height="42" rx="10" fill="#131A29" stroke="#1E293B" stroke-width="1" />
+      <circle cx="20" cy="21" r="4" fill="#F472B6" />
+      <text x="36" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">DaVinci Resolve Tech Media</text>
+    </g>
+  </g>
+</svg>
